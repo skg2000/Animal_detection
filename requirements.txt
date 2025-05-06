@@ -1,0 +1,7 @@
+ultralytics == 8.0.26
+numpy
+matplotlib
+opencv-python~=4.8.0.76
+Flask~=2.2.5
+WTForms~=3.0.1
+Werkzeug~=2.2.3
