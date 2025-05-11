@@ -12,7 +12,7 @@ def email_alert(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "youremail@gmail.com"
+        user = "senderemail@gmail.com"
         msg['from'] = user
         password = "password(16)"
 
@@ -31,7 +31,7 @@ def email_alert1(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "youremail@gmail.com"
+        user = "senderemail@gmail.com"
         msg['from'] = user
         password = "password(16)"
 
@@ -50,7 +50,7 @@ def email_alert2(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "youremail@gmail.com"
+        user = "senderemail@gmail.com"
         msg['from'] = user
         password = "password(16)"
 
@@ -69,7 +69,7 @@ def email_alert3(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "youremail@gmail.com"
+        user = "senderemail@gmail.com"
         msg['from'] = user
         password = "password(16)"
 
@@ -88,7 +88,7 @@ def email_alert4(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "youremail@gmail.com"
+        user = "senderemail@gmail.com"
         msg['from'] = user
         password = "password(16)"
 
@@ -144,27 +144,27 @@ def video_detection(path_x):
                 c2 = x1 + t_size[0], y1 - t_size[1] - 3
                 if class_name == "Lion":
                     color=(0, 204, 255)
-                    email_alert("Danger!", "Lion detected", "skgaurav222@gmail.com")
+                    email_alert("Danger!", "Lion detected", "receiveremail@gmail.com")
                     ring_alarm()
 
                 elif class_name == "Cheetah":
                     color = (222, 82, 175)
-                    email_alert1("Danger!", "Tiger detected", "skgaurav222@gmail.com")
+                    email_alert1("Danger!", "Tiger detected", "receiveremail@gmail.com")
                     ring_alarm1()
 
                 elif class_name == "Elephant":
                     color = (222, 82, 175)
-                    email_alert2("Danger!", "Elephant detected", "skgaurav222@gmail.com")
+                    email_alert2("Danger!", "Elephant detected", "receiveremail@gmail.com")
                     ring_alarm1()
 
                 elif class_name == "Leopard":
                     color = (0, 149, 255)
-                    email_alert3("Danger!", "Leopard detected", "skgaurav222@gmail.com")
+                    email_alert3("Danger!", "Leopard detected", "receiveremail@gmail.com")
                     ring_alarm1()
 
                 else:
                     color = (85,45,255)
-                    email_alert4("Hey!", "Wild Animal detected", "skgaurav222@gmail.com")
+                    email_alert4("Hey!", "Wild Animal detected", "receiveremail@gmail.com")
                 if conf>0.5:
                     cv2.rectangle(img, (x1,y1), (x2,y2), color,3)
                     cv2.rectangle(img, (x1,y1), c2, color, -1, cv2.LINE_AA)  # filled
