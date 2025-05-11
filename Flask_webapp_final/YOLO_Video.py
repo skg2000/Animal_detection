@@ -31,9 +31,9 @@ def email_alert1(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "skg739856@gmail.com"
+        user = "youremail@gmail.com"
         msg['from'] = user
-        password = "vvou bkde pjum zfyv"
+        password = "password(16)"
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
@@ -50,9 +50,9 @@ def email_alert2(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "skg739856@gmail.com"
+        user = "youremail@gmail.com"
         msg['from'] = user
-        password = "vvou bkde pjum zfyv"
+        password = "password(16)"
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
@@ -69,9 +69,9 @@ def email_alert3(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "skg739856@gmail.com"
+        user = "youremail@gmail.com"
         msg['from'] = user
-        password = "vvou bkde pjum zfyv"
+        password = "password(16)"
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
@@ -88,9 +88,9 @@ def email_alert4(subject, body, to):
         msg['subject'] = subject
         msg['to'] = to
 
-        user = "skg739856@gmail.com"
+        user = "youremail@gmail.com"
         msg['from'] = user
-        password = "vvou bkde pjum zfyv"
+        password = "password(16)"
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
